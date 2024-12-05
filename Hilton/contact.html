@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title> Magestic Hotel</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="jsfiles/pickmeup.min.js"></script>
+    <script type="text/javascript" src="jsfiles/handleCounter.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/pickmeup.css">
+    <link rel="stylesheet" type="text/css" href="css/handle-counter.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <script type="text/javascript" src="jsfiles/jquery.scrollUp.js"></script>
+    <script type="text/javascript" src="jsfiles/demo.js"></script>
+
+    <!-- Google Maps Script -->
+    <script async defer 
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3tO4SQlk9ZVpuhRXlmNfYh37e63-Li2k&callback=initMap">
+    </script>
+    <style>
+        #map {
+            width: 100%;
+            height: 300px;
+            margin-top: 20px;
+        }
+    </style>
+    <script>
+        function initMap() {
+            // Coordinates for "Ukchi St 1, Tashkent"
+            var location = { lat: 41.3139633, lng: 69.2489048 };
+
+            // Map initialization
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 15,
+                center: location
+            });
+
+            // Marker for the location
+            var marker = new google.maps.Marker({
+                position: location,
+                map: map,
+                title: 'Magestic Hotel'
+            });
+        }
+    </script>
+</head>
+<body>
+    <header class="tm-header">
+        <img class="tm-logo" src="images\hilton.jpg" alt="Hilton Hotel">
+        <nav class="tm-nav">
+           <div>
+                <ul>
+                    <li class="tm-list"><a href="index.html">Home</a></li>
+                    <li class="tm-list"><a href="explore.html">Explore</a></li>
+                    <li class="tm-list"><a href="rooms.html">Rooms</a></li>
+                    <li class="tm-list"><a href="bb.html">Booking</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>    
+            </div>
+        </nav>
+    </header>
+
+    <section class="tm-main">
+        <p>Contact</p>
+    </section>
+
+    <section class="tm-booking">
+        <form>
+            <div class="tm-form1">
+                <input type="text" name="name" placeholder="Name">  
+                <input type="email" name="email" placeholder="E-mail"> 
+                <textarea placeholder="Your message..." rows="4"></textarea>
+                <input type="submit" id="sub2" value="Send">
+            </div>
+        </form>
+        
+        <div class="vertical-line"> </div>
+        
+        <div class="tm-form2">
+            <div class="tm-cl">
+                <p class="here">We are situated over here</p>
+                <img id="place" src="images/placeholder.png" alt="Placeholder">
+                <!-- Map Container -->
+                <div id="map"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="tm-footer">
+        <div class="tm-us">
+            <img src="images/FooterLogo.jpg" alt="Hotel Logo" class="footer-logo">
+        </div>
+        <div class="tm-address">
+            <p class="bold">Address</p>
+            <p>
+                Tashkent City, Tashkent, Uzbekistan<br>
+                Phone No.: 71 210 88 88<br>
+                Email: Julian98@gmail.com
+            </p>
+        </div>
+        <div class="tm-media">
+            <a href="#"><img src="images/insta.icon.jpg" alt="Instagram"></a>
+            <a href="#"><img src="images/FacebookIcon.jpg" alt="Facebook"></a>
+            <a href="#"><img src="images/twitter.icon.jpg" alt="Twitter"></a>
+        </div>
+    </footer>
+</body>
+</html>
