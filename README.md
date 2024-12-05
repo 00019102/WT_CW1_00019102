@@ -1,7 +1,7 @@
 # WT_CW1_00019102
 
 Home Page
-The Home page welcomes guests to the Aurora Hotel with an image slider of awesome views. It comes with room type information, amenities information, and guest reviews in a carousel. There's a Call to Action/Book button and a Scroll to top for easy navigation.
+The Home page welcomes guests to the Hilton Hotel with an image slider of awesome views. It comes with room type information, amenities information, and guest reviews in a carousel. There's a Call to Action/Book button and a Scroll to top for easy navigation.
 Explore Page
 A minimalist page that will be dedicated to the hotel's special features. Each service will be supported by an image and short description, with attention to simplicity and clarity.
 
